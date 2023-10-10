@@ -1,0 +1,86 @@
+@import "./vendor/vars";
+@import "./vendor/mixins";
+@import './vendor/setting.scss';
+
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(100vw / 1920 * 10);
+  @include breakpoint($xl-bp) {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  @include breakpoint($sm-bp) {
+    font-size: calc(100vw / 375 * 10);
+  }
+}
+
+body {
+  font-family: Manrope;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  text-align: left;
+}
+.container {
+  width: 172rem;
+  margin: 0 auto;
+  @include breakpoint($xl-bp) {
+    width: 95%;
+    overflow: hidden;
+  }
+  @include breakpoint($sm-bp) {
+    width: 33.5rem;
+  }
+}
+
+.content {
+  @include breakpoint($xl-bp) {}
+  @include breakpoint($sm-bp) {}
+}
+
+
+h1 {
+  @include breakpoint($xl-bp) {}
+  @include breakpoint($sm-bp) {}
+}
+
+h2 {
+  @include breakpoint($xl-bp) {}
+  @include breakpoint($sm-bp) {}
+}
+
+h3 {
+  @include breakpoint($xl-bp) {}
+  @include breakpoint($sm-bp) {}
+}
+
+input::-webkit-input-placeholder {}
+
+input::-moz-placeholder {}
+
+a {
+  
+}
+
+.overflow {
+  overflow: hidden !important;
+  overscroll-behavior-y: none !important;
+  touch-action: none;
+}
+
+
+
+/*--------- popup -------------*/
+@import './blocks/popup.scss';
+@import './blocks/header.scss';
+
+
+/*------section------*/
+
+
+
+
+
+@import './blocks/footer.scss';
+@import './blocks/animation.scss';
