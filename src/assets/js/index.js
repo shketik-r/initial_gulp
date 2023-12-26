@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // let dropdown = document.querySelectorAll('.dropdown');
 
-  // if (dropdown) {
+  // if (dropdown.length > 0) {
   //   dropdown.forEach(dd => {
   //     new DropDownList(dd, {
   //       panel: '.dropdown__panel',
