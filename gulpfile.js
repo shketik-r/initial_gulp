@@ -43,7 +43,7 @@ const path = {
       "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
     fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
     videos: srcPath + "assets/videos/**/*.{mp4,webm}",
-    audio:  srcPath + "assets/audio/**/*.{mp3,webm}",// Добавлено
+    audio: srcPath + "assets/audio/**/*.{mp3,webm}",// Добавлено
   },
   watch: {
     html: srcPath + "**/*.html",
@@ -184,7 +184,7 @@ function watchFiles() {
 
 const build = series(
   clean,
-  parallel(html, php, css, js, images, videos,audio, fonts) // Добавлено php, audio
+  parallel(html, php, css, js, images, videos, audio, fonts) // Добавлено php, audio
 );
 const dev = parallel(build, watchFiles, serve);
 

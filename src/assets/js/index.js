@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function (event) {
 
   /*----------------------------Modal-----------------------------*/
@@ -327,3 +326,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 });
+
+
+

@@ -2,7 +2,6 @@
 @import "./vendor/mixins";
 @import './vendor/setting.scss';
 
-
 html {
   scroll-behavior: smooth;
   font-size: calc(100vw / 1920 * 10);
@@ -16,29 +15,19 @@ html {
   }
 }
 
-body {
-  font-family: Manrope;
-  font-size: 1.8rem;
-  font-weight: 400;
-  letter-spacing: 0.05rem;
-  text-align: left;
-}
+body {}
 
 .container {
-  width: 172rem;
+  width: 100%;
+  max-width: 147.2rem;
   margin: 0 auto;
-
-  @include breakpoint($xl-bp) {
-    width: 95%;
-    overflow: hidden;
-  }
-
-  @include breakpoint($sm-bp) {
-    width: 33.5rem;
-  }
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 }
 
 .content {
+  overflow: hidden;
+
   @include breakpoint($xl-bp) {}
 
   @include breakpoint($sm-bp) {}
@@ -86,20 +75,19 @@ a {}
   //   scrollbar-gutter: auto !important;
 
   // }
+
+
+
 }
 
 
 
-/*--------- popup -------------*/
-@import './blocks/popup.scss';
-@import './blocks/header.scss';
-
-
-/*------section------*/
-
-
-
-
-
-@import './blocks/footer.scss';
+/*--------- blocks -------------*/
 @import './blocks/animation.scss';
+@import './blocks/header.scss';
+@import './blocks/popup.scss';
+@import './blocks/footer.scss';
+
+/*------page------*/
+
+@import './page/main.scss';
