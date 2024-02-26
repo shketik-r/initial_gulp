@@ -21,7 +21,7 @@ dd {
 }
 
 // ::-webkit-scrollbar {
-//   width: 0;
+//   width: 1rem;
 // }
 
 *,
@@ -51,8 +51,10 @@ input:focus {
 
 button {
   border: none;
-  background: #FFF;
+  background: transparent;
   margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 a {
