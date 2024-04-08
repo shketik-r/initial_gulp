@@ -29,29 +29,22 @@ main{
   margin: 0 auto;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
-
 }
 
 
 h1 {
-
-
   @include breakpoint($xl-bp) {}
 
   @include breakpoint($sm-bp) {}
 }
 
 h2 {
-
-
   @include breakpoint($xl-bp) {}
 
   @include breakpoint($sm-bp) {}
 }
 
 h3 {
-
-
   @include breakpoint($xl-bp) {}
 
   @include breakpoint($sm-bp) {}
@@ -73,7 +66,6 @@ a {
   scrollbar-gutter: stable !important;
   overscroll-behavior-y: none !important;
 }
-
 
 ::-webkit-scrollbar {
   // width: 0.8rem;
