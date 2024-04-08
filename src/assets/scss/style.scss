@@ -20,10 +20,6 @@ body {
 
 }
 main{
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-
 
 }
 
@@ -80,23 +76,23 @@ a {
 
 
 ::-webkit-scrollbar {
-  width: 0.8rem;
-  height: 0;
-  background-color: transparent;
+  // width: 0.8rem;
+  // height: 0;
+  // background-color: transparent;
 
   @include breakpoint($sm-bp) {
-    width: 0.5rem;
+    // width: 0.5rem;
   }
 }
 
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--blue);
-  border-radius: 10rem;
+  // background-color: var(--blue);
+  // border-radius: 10rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #253861;
+  // background-color: #253861;
 }
 
 // lib
@@ -104,8 +100,7 @@ a {
 @import './lib/swiper.scss';
 
 /*--------- components -------------*/
-@import './components/btns.scss';
-@import './components/breadcrumb.scss';
+
 
 
 /*--------- popup -------------*/
