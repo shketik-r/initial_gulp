@@ -4,7 +4,8 @@
   "description": "",
   "author": "author",
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "dev": "gulp"
   },
   "devDependencies": {
     "@babel/core": "7.23.0",
